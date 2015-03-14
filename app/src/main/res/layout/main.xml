@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="500dp"
+
+
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"             >
+
+            <fragment
+                android:id="@+id/fragment1"
+                android:name="com.gruita.kb.ioc.otto.TaskListFragment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <fragment
+                android:id="@+id/fragment2"
+                android:name="com.gruita.kb.ioc.otto.ActivityDetailsFragment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="350dp"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+
+    android:background="#00ffff"
+    >
+
+
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/btnComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset" />
+
+
+
+
+</LinearLayout>
+
+</LinearLayout>
