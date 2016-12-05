@@ -16,19 +16,20 @@ public class ActivityDetailsFragment extends BaseFragment {
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {				
-		
-		
+			Bundle savedInstanceState) {
+
+		super.onCreateView(inflater, container, savedInstanceState);
 		View inflatedView = inflater.inflate(R.layout.activity, container, false);
 
 		tv = (TextView)inflatedView.findViewById(R.id.btnTargetBottom);
-		
+
 
 		return inflatedView;	
 		
 		
 	}
-	
+
+
 
 	@Subscribe
     /**
@@ -50,6 +51,5 @@ public class ActivityDetailsFragment extends BaseFragment {
 
         tv.setText("Details: Initial text");
     }
-	
 
 }

@@ -1,6 +1,5 @@
 package com.gruita.kb.ioc.otto;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,6 +22,7 @@ public class TaskListFragment  extends BaseFragment {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
 
+            super.onCreateView(inflater, container, savedInstanceState);
             View inflatedView = inflater.inflate(R.layout.tasklist, container, false);
             tv = (TextView)inflatedView.findViewById(R.id.btnTargetTop);
 
@@ -31,6 +31,8 @@ public class TaskListFragment  extends BaseFragment {
 
 
         }
+
+
 
         @Subscribe
         public void onTestEvent(EventTaskCancel event) {
@@ -51,8 +53,6 @@ public class TaskListFragment  extends BaseFragment {
         }
 
 
-
-
-
+   
 
 }
