@@ -10,6 +10,10 @@ import com.gruita.kb.ioc.otto.events.EventCompleteTask;
 import com.gruita.kb.ioc.otto.events.EventReset;
 import com.gruita.kb.ioc.otto.events.EventTaskCancel;
 
+
+/**
+* Should be replaced with LiveData now. 
+*/
 public class MainActivity extends Activity implements OnClickListener{
 	
 	
