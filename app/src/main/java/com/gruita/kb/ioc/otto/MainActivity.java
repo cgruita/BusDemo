@@ -13,7 +13,8 @@ import com.gruita.kb.ioc.otto.events.EventTaskCancel;
 
 /**
 * Should be replaced with LiveData now. 
-* Will add a new project
+* Will add a new project (Kotlin)
+* 
 */
 public class MainActivity extends Activity implements OnClickListener{
 	
